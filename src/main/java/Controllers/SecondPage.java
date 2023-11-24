@@ -12,7 +12,6 @@ import java.io.IOException;
 @WebServlet("/SecondPage")
 public class SecondPage extends HttpServlet {
 
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AcceptService acceptService = new AcceptService();

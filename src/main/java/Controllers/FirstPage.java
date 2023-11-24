@@ -11,7 +11,6 @@ import java.io.IOException;
 
 @WebServlet("/FirstPage")
 public class FirstPage extends HttpServlet {
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

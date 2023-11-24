@@ -5,7 +5,6 @@
     <title>Text Quest</title>
 
 </head>
-
     <body>
         <h1>Text Quest</h1>
         <hr>
@@ -22,5 +21,4 @@
             </form>
         </div>
     </body>
-
 </html>

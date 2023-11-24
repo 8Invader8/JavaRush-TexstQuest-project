@@ -14,7 +14,6 @@
         <form action="Redirect" method="post">
             <label for="choice">Choose the options:</label>
             <br>
-
             <input type="radio" name="choice" value="FirstPage" id="choice"><%=STEP_1_FIRST_OPTION%><br>
             <input type="radio" name="choice" value="SecondPage" id="choice"><%=STEP_1_SECOND_OPTION%><br>
             <input type="submit" value="Enter">

@@ -15,7 +15,6 @@ public class RedirectServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AcceptService acceptService = new AcceptService();
         String choice = acceptService.call(req.getParameter("choice"));
-
         resp.sendRedirect(choice);
     }
 }

@@ -9,7 +9,7 @@ public class AcceptService {
             redirectURL = "FirstPage.jsp";
         } else if ("SecondPage".equals(answer)) {
             redirectURL = "losePage.jsp";
-        }else {
+        } else {
             redirectURL = "Main.jsp";
         }
 

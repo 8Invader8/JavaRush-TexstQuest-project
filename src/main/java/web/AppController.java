@@ -8,5 +8,4 @@ public class AppController {
     private AppController(){
 
     }
-
 }
