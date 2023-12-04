@@ -6,17 +6,16 @@
 
 </head>
     <body>
-        <h1>Text Quest</h1>
+        <h1>Welcome to the Text Journey</h1>
+        <p>You "wake up" and immediately understand that you`re in dream. Would you try to continue?</p>
         <hr>
         <br>
         <div>
-            <form action="Redirect" method="post">
-                <label for="choice">Choose the options</label>
+            <form action="redirect" method="post">
                 <br>
 
 <%--                v0.2--%>
-                <input type="radio" name="choice" value="FirstPage" id="choice">First Option<br>
-                <input type="radio" name="choice" value="Main" id="choice">Second Option<br>
+                <input type="radio" name="choice" value="Main" id="choice">"Try it!""<br>
                 <input type="submit" value="Enter">
             </form>
         </div>

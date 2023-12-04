@@ -11,15 +11,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/redirect")
-public class RedirectServlet extends HttpServlet {
-    private final static Logger LOGGER = LoggerFactory.getLogger(RedirectServlet.class);
+@WebServlet("/third_question")
+public class ThirdQuestionPage extends HttpServlet {
+    private final static Logger LOGGER = LoggerFactory.getLogger(ThirdQuestionPage.class);
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LOGGER.debug("Redirect from Main page to next!");
+        LOGGER.debug("User decided correct option from third step(question).");
 
         PageController pageController = new PageController();
         String choice = pageController.call(req.getParameter("choice"));
-        resp.sendRedirect(choice);
+
+        resp.setStatus(200);
+        req.setAttribute("choice", choice);
+        req.getRequestDispatcher(choice).forward(req,resp);
     }
 }
